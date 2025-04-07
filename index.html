@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskEase - Service Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">TaskEase</a>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#categories">Categories</a>
+                <a href="worker-register.html">Become a Tasker</a>
+                <a href="customer-register.html" class="btn-primary">Sign Up</a>
+                <a href="#" class="btn-outline">Login</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find trusted help for all your home needs</h1>
+            <p>Book skilled professionals for any task, any time</p>
+            
+            <!-- Search Form -->
+            <div class="search-box">
+                <form action="#">
+                    <div class="search-input">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="What service do you need?">
+                    </div>
+                    <div class="location-input">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Enter your location">
+                    </div>
+                    <button type="submit" class="btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Popular Services</h2>
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-hammer"></i></div>
+                    <h3>Carpentry</h3>
+                    <p>Furniture repair, installation</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Electricians</h3>
+                    <p>Wiring, fixtures, repairs</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-broom"></i></div>
+                    <h3>Cleaning</h3>
+                    <p>Housekeeping, deep cleaning</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-tools"></i></div>
+                    <h3>Plumbing</h3>
+                    <p>Leaks, installations</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-paint-roller"></i></div>
+                    <h3>Painting</h3>
+                    <p>Walls, furniture, exteriors</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-ellipsis-h"></i></div>
+                    <h3>More Services</h3>
+                    <p>View all categories</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How TaskEase Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="number">1</div>
+                    <h3>Post Your Task</h3>
+                    <p>Describe what you need done and set your budget</p>
+                </div>
+                <div class="step">
+                    <div class="number">2</div>
+                    <h3>Get Matched</h3>
+                    <p>We'll connect you with qualified taskers nearby</p>
+                </div>
+                <div class="step">
+                    <div class="number">3</div>
+                    <h3>Hire & Pay Securely</h3>
+                    <p>Choose your tasker and pay after job completion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Taskers Section -->
+    <section class="featured-taskers">
+        <div class="container">
+            <h2>Featured Taskers Near You</h2>
+            <div class="tasker-grid">
+                <!-- Tasker cards would be dynamically loaded here -->
+                <div class="tasker-card">
+                    <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                    <img src="images/tasker1.jpg" alt="Tasker Name">
+                    <h3>Rajesh Kumar</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.7 (128 reviews)</span>
+                    </div>
+                    <p class="skills">Carpenter • Electrician</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> 1.2 km away</p>
+                    <a href="worker-profile.html" class="btn-outline">View Profile</a>
+                </div>
+                <!-- More tasker cards would go here -->
+            </div>
+            <a href="#" class="btn-primary">View All Taskers</a>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section class="safety">
+        <div class="container">
+            <h2>Your Safety is Our Priority</h2>
+            <div class="safety-features">
+                <div class="feature">
+                    <i class="fas fa-id-card"></i>
+                    <h3>ID Verification</h3>
+                    <p>All taskers and customers are verified with government IDs</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Profile Screening</h3>
+                    <p>Customers must complete profiles with photos and background info</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-star"></i>
+                    <h3>Rating System</h3>
+                    <p>Two-way rating system ensures accountability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TaskEase</h3>
+                    <p>Connecting skilled professionals with people who need help with daily tasks.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Become a Tasker</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Download App</h3>
+                    <div class="app-download">
+                        <a href="#"><img src="images/google-play.png" alt="Google Play"></a>
+                        <a href="#"><img src="images/app-store.png" alt="App Store"></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 TaskEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

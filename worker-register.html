@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as a Tasker | TaskEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar">
+        <!-- ... -->
+    </nav>
+
+    <!-- Registration Form -->
+    <section class="registration-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>Register as a Tasker</h2>
+                <p>Join our platform and start earning by helping people with their tasks.</p>
+                
+                <form id="workerRegisterForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Create Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Skills & Services</label>
+                        <div class="skills-checkbox">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="carpentry" name="skills" value="carpentry">
+                                <label for="carpentry">Carpentry</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="electrical" name="skills" value="electrical">
+                                <label for="electrical">Electrical</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="plumbing" name="skills" value="plumbing">
+                                <label for="plumbing">Plumbing</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="cleaning" name="skills" value="cleaning">
+                                <label for="cleaning">Cleaning</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="painting" name="skills" value="painting">
+                                <label for="painting">Painting</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="other" name="skills" value="other">
+                                <label for="other">Other Services</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Years of Experience</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">Select</option>
+                            <option value="0-1">0-1 years</option>
+                            <option value="1-3">1-3 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="5+">5+ years</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Your Location</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="idProof">Upload ID Proof (Aadhaar/PAN)</label>
+                        <input type="file" id="idProof" name="idProof" accept="image/*,.pdf" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="profilePhoto">Profile Photo</label>
+                        <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hourlyRate">Hourly Rate (₹)</label>
+                        <input type="number" id="hourlyRate" name="hourlyRate" min="100" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="availability">Availability</label>
+                        <div class="availability-options">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="weekdays" name="availability" value="weekdays">
+                                <label for="weekdays">Weekdays</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="weekends" name="availability" value="weekends">
+                                <label for="weekends">Weekends</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="mornings" name="availability" value="mornings">
+                                <label for="mornings">Mornings (8AM-12PM)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="afternoons" name="availability" value="afternoons">
+                                <label for="afternoons">Afternoons (12PM-5PM)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="evenings" name="availability" value="evenings">
+                                <label for="evenings">Evenings (5PM-9PM)</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Complete Registration</button>
+                </form>
+                
+                <div class="login-link">
+                    Already have an account? <a href="#">Log in</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <!-- ... -->
+    </footer>
+
+    <script src="js/form-validation.js"></script>
+</body>
+</html>

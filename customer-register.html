@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as a Customer | TaskEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar">
+        <!-- ... -->
+    </nav>
+
+    <!-- Registration Form -->
+    <section class="registration-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>Register as a Customer</h2>
+                <p>Create an account to post tasks and hire skilled professionals.</p>
+                
+                <form id="customerRegisterForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Create Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="profileType">Profile Type</label>
+                        <select id="profileType" name="profileType" required>
+                            <option value="">Select</option>
+                            <option value="bachelor">Bachelor</option>
+                            <option value="family">Family</option>
+                            <option value="company">Company</option>
+                        </select>
+                        <small>This helps ensure safety for our taskers</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Your Location</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="idProof">Upload ID Proof (Aadhaar/PAN/Company ID)</label>
+                        <input type="file" id="idProof" name="idProof" accept="image/*,.pdf" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="profilePhoto">Profile Photo</label>
+                        <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Complete Registration</button>
+                </form>
+                
+                <div class="login-link">
+                    Already have an account? <a href="#">Log in</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <!-- ... -->
+    </footer>
+
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
